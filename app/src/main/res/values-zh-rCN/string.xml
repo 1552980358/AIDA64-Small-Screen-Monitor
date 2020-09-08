@@ -1,0 +1,31 @@
+<resources>
+    
+    <string name="app_name">AIDA64 Small Screen Monitor</string>
+    
+    <string name="notification_title">守护服务</string>
+    <string name="notification_content">防止被系统杀死</string>
+    
+    <string name="mainActivity_connecting">连接中…</string>
+    <string name="mainActivity_permission_success">\"修改系统设置\" 限权授予成功</string>
+    <string name="mainActivity_permission_fail">\"修改系统设置\" 限权授予失败</string>
+    
+    <string name="menu_about">关于</string>
+    
+    <string name="mainPreference_server">服务器</string>
+    <string name="mainPreference_server_ip">IP地址</string>
+    <string name="mainPreference_server_port">端口</string>
+    <string name="mainPreference_client">客户端</string>
+    <string name="mainPreference_client_brightness">连接中使用低亮度</string>
+    <string name="mainPreference_client_brightness_summary">需要 \"修改系统设置\" 限权</string>
+    <string name="mainPreference_client_brightness_gain">点击此处授予 \"修改系统设置\" 权限</string>
+    <string name="mainPreference_client_brightness_toast">\"修改系统设置\" 限权已被授予</string>
+    <string name="mainPreference_connectivity">连接</string>
+    <string name="mainPreference_connectivity_heartbeat">心跳间隔</string>
+    <string name="mainPreference_connectivity_connect">心跳间隔</string>
+    <string name="mainPreference_connectivity_read">心跳间隔</string>
+    
+    <string name="aboutActivity_title">关于</string>
+    
+    <string name="remoteActivity_need_permission">自动亮度需要授予 \"修改系统设置\" 限权哦</string>
+
+</resources>

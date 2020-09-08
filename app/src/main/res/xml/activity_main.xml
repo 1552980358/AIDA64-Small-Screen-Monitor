@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:iconSpaceReserved="false">
+    
+    <PreferenceCategory
+        android:title="@string/mainPreference_server"
+        app:iconSpaceReserved="false">
+        
+        <EditTextPreference
+            android:key="ip"
+            android:title="@string/mainPreference_server_ip"
+            app:iconSpaceReserved="false" />
+        
+        <EditTextPreference
+            android:key="port"
+            android:title="@string/mainPreference_server_port"
+            app:defaultValue="80"
+            app:iconSpaceReserved="false" />
+    
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="@string/mainPreference_client"
+        app:iconSpaceReserved="false">
+        
+        <SwitchPreferenceCompat
+            android:key="brightness"
+            android:title="@string/mainPreference_client_brightness"
+            android:summary="@string/mainPreference_client_brightness_summary"
+            app:defaultValue="true"
+            app:iconSpaceReserved="false" />
+        
+        <Preference
+            android:key="permission"
+            android:title="@string/mainPreference_client_brightness_gain"
+            app:iconSpaceReserved="false" />
+    
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="@string/mainPreference_connectivity"
+        app:iconSpaceReserved="false">
+        
+        <EditTextPreference
+            android:key="heartbeat"
+            android:title="@string/mainPreference_connectivity_heartbeat"
+            app:defaultValue="5000"
+            app:iconSpaceReserved="false" />
+    
+        <EditTextPreference
+            android:key="connect"
+            android:title="@string/mainPreference_connectivity_read"
+            app:defaultValue="500"
+            app:iconSpaceReserved="false" />
+        
+        <EditTextPreference
+            android:key="read"
+            android:title="@string/mainPreference_connectivity_connect"
+            app:defaultValue="500"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

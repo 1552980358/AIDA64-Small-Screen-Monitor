@@ -1,0 +1,69 @@
+<resources>
+    
+    <string name="app_name">AIDA64 Small Screen Monitor</string>
+    
+    <string name="notification_title">Guardian Process</string>
+    <string name="notification_content">Preventing killing application by system</string>
+    
+    <string name="mainActivity_connecting">Connecting…</string>
+    <string name="mainActivity_permission_success">\"Write System Settings\" permission successfully granted</string>
+    <string name="mainActivity_permission_fail">\"Write System Settings\" permission granted fail</string>
+    
+    <string name="menu_about">About</string>
+    
+    <string name="mainPreference_server">Server</string>
+    <string name="mainPreference_server_ip">IP Address</string>
+    <string name="mainPreference_server_port">Port</string>
+    <string name="mainPreference_client">Client</string>
+    <string name="mainPreference_client_brightness">Low brightness when connecting</string>
+    <string name="mainPreference_client_brightness_summary">Needs \"Write System Settings\" permission</string>
+    <string name="mainPreference_client_brightness_gain">Click to give \"Write System Settings\" permission</string>
+    <string name="mainPreference_client_brightness_toast">\"Write System Settings\" permission was granted before</string>
+    <string name="mainPreference_connectivity">Connectivity</string>
+    <string name="mainPreference_connectivity_heartbeat">Heartbeat Interval</string>
+    <string name="mainPreference_connectivity_connect">Connect Timeout</string>
+    <string name="mainPreference_connectivity_read">Read Timeout</string>
+    
+    <string name="aboutActivity_title">About</string>
+    <string name="aboutActivity_about" translatable="false">
+        作者:\n
+        1552980358\n
+        酷安:\n
+        住在地球真累\n
+        开源许可证\n
+        GNU GPL License 3.0\n
+        \n
+        未经允许禁止用作商业用途
+    </string>
+    <string name="aboutActivity_topic_server_title" translatable="false">服务器端</string>
+    <string name="aboutActivity_topic_server" translatable="false">
+        1. 打开端口\n
+        \ \ \ \ \ 步骤: AIDA64里 文件 → 设置 → LCD → \"rRemoteSensor\" → 端口建议使用默认, 分辨率, 建议 1920*1080 → \"启用RemoteSensor LCD支持\"\n
+        \n
+        2. 导入模板\n
+        \ \ \ \ \ 从我的GitHub或者以下链接下载模板, 在设置里的\"LCD项目\"里面导入\n
+        \n
+        3. 应用\n
+        \n
+        4. 可选择循环播放, 在\"LCD选项\"里打开循环即可\n
+        \n
+        模板下载地址:(建议安装Ubuntu-Regular.ttf字体)\n
+        https://codeload.github.com/1552980358/AIDA64-SENSOR-PANEL/zip/master
+        \n
+        https://www.jianguoyun.com/p/DbbicvYQv63kCBiuhroD
+    </string>
+    <string name="aboutActivity_topic_client_title" translatable="false">客户端</string>
+    <string name="aboutActivity_topic_client" translatable="false">
+        1. 输入IP地址, 内网通常为192.168.1.xxx或者192.168.0.xxx\n
+        \ \ \ \ \ Windows10: 设置 → 网络和Internet → 属性 → IPv4 地址\n
+        \n
+        2. 输入端口, 默认为80, 如在AIDA64里没修改即可不必理会\n
+        \n
+        3. 其他选项请看以下介绍, 如无特殊要求, 保持默认不必理会即可\n
+        \n
+        4. 点击右下角按钮即可开始
+    </string>
+    
+    <string name="remoteActivity_need_permission">Auto brightness requires \"Write System Settings\" permission</string>
+
+</resources>

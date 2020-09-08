@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "AIDA64 Small Screen Monitor"
