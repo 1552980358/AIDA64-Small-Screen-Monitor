@@ -20,10 +20,10 @@ class AboutActivity: AppCompatActivity() {
         
         setContentView(R.layout.activity_about)
         
-        toolbar.setNavigationOnClickListener { finish() }
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeButtonEnabled(true)
+        toolbar.setNavigationOnClickListener { finish() }
         
     }
     
