@@ -24,6 +24,7 @@ class MainPreference: PreferenceFragmentCompat() {
         private const val KEY_IP = "ip"
         private const val KEY_PORT = "port"
         private const val KEY_BRIGHTNESS = "brightness"
+        private const val KEY_AMOLED = "amoled"
         private const val KEY_HEART_BEAT = "heartbeat"
         private const val KEY_CONNECT_TIMEOUT = "connect"
         private const val KEY_READ_TIMEOUT = "read"
@@ -99,6 +100,7 @@ class MainPreference: PreferenceFragmentCompat() {
         findPreference<EditTextPreference>(KEY_IP)!!.text!!,
         findPreference<EditTextPreference>(KEY_PORT)!!.text!!,
         findPreference<SwitchPreferenceCompat>(KEY_BRIGHTNESS)!!.sharedPreferences.getBoolean(KEY_BRIGHTNESS, true),
+        findPreference<SwitchPreferenceCompat>(KEY_AMOLED)!!.sharedPreferences.getBoolean(KEY_AMOLED, true),
         findPreference<EditTextPreference>(KEY_HEART_BEAT)!!.text!!.toLong(),
         findPreference<EditTextPreference>(KEY_CONNECT_TIMEOUT)!!.text!!.toInt(),
         findPreference<EditTextPreference>(KEY_READ_TIMEOUT)!!.text!!.toInt()

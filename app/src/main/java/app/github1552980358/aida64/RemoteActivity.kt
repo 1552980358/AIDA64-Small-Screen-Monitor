@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
@@ -14,6 +15,7 @@ import androidx.core.content.ContextCompat
 import app.github1552980358.aida64.GuardianService.Companion.SERVICE_CALL
 import app.github1552980358.aida64.GuardianService.Companion.START_FOREGROUND
 import app.github1552980358.aida64.GuardianService.Companion.STOP_FOREGROUND
+import kotlinx.android.synthetic.main.activity_remote.relativeLayout
 import kotlinx.android.synthetic.main.activity_remote.textView_ip
 import kotlinx.android.synthetic.main.activity_remote.webView
 import lib.github1552980358.ktExtension.android.content.toast
@@ -108,6 +110,10 @@ class RemoteActivity: AppCompatActivity(), Serializable {
                 webView.visibility = View.VISIBLE
                 highBrightness()
             }
+        }
+        
+        if (settings!!.amoled) {
+            relativeLayout.setBackgroundColor(Color.BLACK)
         }
         
         lowBrightness()

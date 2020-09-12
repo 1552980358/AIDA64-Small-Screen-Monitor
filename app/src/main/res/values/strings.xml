@@ -19,6 +19,8 @@
     <string name="mainPreference_client_brightness_summary">Needs \"Write System Settings\" permission</string>
     <string name="mainPreference_client_brightness_gain">Click to give \"Write System Settings\" permission</string>
     <string name="mainPreference_client_brightness_toast">\"Write System Settings\" permission was granted before</string>
+    <string name="mainPreference_client_amoled">AMOLED Mode</string>
+    <string name="mainPreference_client_amoled_summary">Pure black (#000000) background</string>
     <string name="mainPreference_connectivity">Connectivity</string>
     <string name="mainPreference_connectivity_heartbeat">Heartbeat Interval</string>
     <string name="mainPreference_connectivity_connect">Connect Timeout</string>

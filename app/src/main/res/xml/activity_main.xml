@@ -37,6 +37,13 @@
             android:title="@string/mainPreference_client_brightness_gain"
             app:iconSpaceReserved="false" />
     
+        <SwitchPreferenceCompat
+            android:key="amoled"
+            android:title="@string/mainPreference_client_amoled"
+            android:summary="@string/mainPreference_client_amoled_summary"
+            app:defaultValue="false"
+            app:iconSpaceReserved="false" />
+    
     </PreferenceCategory>
     
     <PreferenceCategory

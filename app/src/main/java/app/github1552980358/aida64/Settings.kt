@@ -6,6 +6,7 @@ class Settings(
     ip: String,
     port: String,
     val brightness: Boolean,
+    val amoled: Boolean,
     val heartbeat: Long,
     val connect: Int,
     val read: Int
