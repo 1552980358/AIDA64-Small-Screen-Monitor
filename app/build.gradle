@@ -9,6 +9,7 @@ android {
     defaultConfig {
         applicationId "app.github1552980358.aida64"
         minSdkVersion 21
+        //noinspection OldTargetApi
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -46,10 +47,10 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.2.1'
 
-    implementation 'com.github.1552980358:ktextension:04f06c46a3'
-    implementation 'com.github.1552980358:ktextensionandroid:9cd802967b'
+    implementation 'com.github.1552980358:ktextension:8a60d0da9c'
+    implementation 'com.github.1552980358:ktextensionandroid:18f7dc580f'
 
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
