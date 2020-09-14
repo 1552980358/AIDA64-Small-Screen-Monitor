@@ -5,7 +5,8 @@
     <string name="notification_title">Guardian Process</string>
     <string name="notification_content">Preventing killing application by system</string>
     
-    <string name="mainActivity_connecting">Connecting…</string>
+    <string name="remoteActivity_connecting">Connecting…</string>
+    
     <string name="mainActivity_permission_success">\"Write System Settings\" permission successfully granted</string>
     <string name="mainActivity_permission_fail">\"Write System Settings\" permission granted fail</string>
     

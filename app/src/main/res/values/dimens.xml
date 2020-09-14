@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
-    <dimen name="mainActivity_title">25sp</dimen>
-    <dimen name="mainActivity_ip">15sp</dimen>
+    <dimen name="remoteTextView_title">20sp</dimen>
 
 </resources>

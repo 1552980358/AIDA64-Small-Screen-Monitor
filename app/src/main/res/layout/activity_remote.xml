@@ -2,32 +2,12 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/relativeLayout">
+    android:layout_height="match_parent">
     
-    <LinearLayout
+    <app.github1552980358.aida64.RemoteTextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:orientation="vertical">
-        
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/mainActivity_connecting"
-            android:textSize="@dimen/mainActivity_title"
-            android:textColor="@android:color/black"
-            android:layout_gravity="center_horizontal"/>
-        
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView_ip"
-            android:textSize="@dimen/mainActivity_title"
-            android:textColor="@android:color/black"
-            android:layout_gravity="center_horizontal"/>
-
-    </LinearLayout>
+        android:layout_height="match_parent"
+        android:id="@+id/remoteTextView"/>
     
     <WebView
         android:layout_width="match_parent"

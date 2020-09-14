@@ -5,7 +5,8 @@
     <string name="notification_title">守护服务</string>
     <string name="notification_content">防止被系统杀死</string>
     
-    <string name="mainActivity_connecting">连接中…</string>
+    <string name="remoteActivity_connecting">连接中…</string>
+    
     <string name="mainActivity_permission_success">\"修改系统设置\" 限权授予成功</string>
     <string name="mainActivity_permission_fail">\"修改系统设置\" 限权授予失败</string>
     
@@ -19,8 +20,8 @@
     <string name="mainPreference_client_brightness_summary">需要 \"修改系统设置\" 限权</string>
     <string name="mainPreference_client_brightness_gain">点击此处授予 \"修改系统设置\" 权限</string>
     <string name="mainPreference_client_brightness_toast">\"修改系统设置\" 限权已被授予</string>
-    <string name="mainPreference_client_amoled">AMOLED Mode</string>
-    <string name="mainPreference_client_amoled_summary">Pure black (#000000) background</string>
+    <string name="mainPreference_client_amoled">AMOLED模式</string>
+    <string name="mainPreference_client_amoled_summary">纯黑 (#000000) 背景</string>
     <string name="mainPreference_connectivity">连接</string>
     <string name="mainPreference_connectivity_heartbeat">心跳间隔</string>
     <string name="mainPreference_connectivity_connect">心跳间隔</string>

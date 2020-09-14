@@ -3,8 +3,8 @@ package app.github1552980358.aida64
 import java.io.Serializable
 
 class Settings(
-    ip: String,
-    port: String,
+    val ip: String,
+    val port: String,
     val brightness: Boolean,
     val amoled: Boolean,
     val heartbeat: Long,

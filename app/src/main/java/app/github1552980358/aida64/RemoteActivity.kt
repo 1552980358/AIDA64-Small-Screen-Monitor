@@ -4,7 +4,6 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
@@ -15,8 +14,7 @@ import androidx.core.content.ContextCompat
 import app.github1552980358.aida64.GuardianService.Companion.SERVICE_CALL
 import app.github1552980358.aida64.GuardianService.Companion.START_FOREGROUND
 import app.github1552980358.aida64.GuardianService.Companion.STOP_FOREGROUND
-import kotlinx.android.synthetic.main.activity_remote.relativeLayout
-import kotlinx.android.synthetic.main.activity_remote.textView_ip
+import kotlinx.android.synthetic.main.activity_remote.remoteTextView
 import kotlinx.android.synthetic.main.activity_remote.webView
 import lib.github1552980358.ktExtension.android.content.toast
 import lib.github1552980358.ktExtension.android.util.logE
@@ -56,9 +54,10 @@ class RemoteActivity: AppCompatActivity(), Serializable {
                     if (!isConnected) {
                         return
                     }
-                    webView.visibility = View.GONE
                     isConnected = false
                     lowBrightness()
+                    remoteTextView.startTextMove()
+                    webView.visibility = View.GONE
                 }
             }
         }
@@ -97,7 +96,8 @@ class RemoteActivity: AppCompatActivity(), Serializable {
         
         setContentView(R.layout.activity_remote)
         
-        textView_ip.text = settings?.link
+        remoteTextView.setStatus(R.string.remoteActivity_connecting)
+        remoteTextView.setTarget(settings!!.ip, settings!!.port)
         
         webView.settings.apply {
             javaScriptEnabled = true
@@ -109,14 +109,14 @@ class RemoteActivity: AppCompatActivity(), Serializable {
             override fun onPageFinished(view: WebView?, url: String?) {
                 webView.visibility = View.VISIBLE
                 highBrightness()
+                remoteTextView.stopTextMove()
             }
         }
         
         if (settings!!.amoled) {
-            relativeLayout.setBackgroundColor(Color.BLACK)
+            remoteTextView.amoledMode()
         }
         
-        lowBrightness()
     }
     
     private fun lowBrightness() {
@@ -163,8 +163,9 @@ class RemoteActivity: AppCompatActivity(), Serializable {
                 .putExtra(INTENT_SETTINGS, settings)
         )
         
-        if (isConnected) {
-            highBrightness()
+        if (isConnected) highBrightness() else lowBrightness()
+        if (settings!!.amoled) {
+            remoteTextView.startTextMove()
         }
     }
     
@@ -179,6 +180,9 @@ class RemoteActivity: AppCompatActivity(), Serializable {
         )
         
         highBrightness()
+        if (settings!!.amoled) {
+            remoteTextView.stopTextMove()
+        }
     }
     
     override fun onBackPressed() = finish()
@@ -187,6 +191,10 @@ class RemoteActivity: AppCompatActivity(), Serializable {
         logE(TAG, "Activity: finish")
         
         startService(Intent(this, GuardianService::class.java).putExtra(SERVICE_CALL, STOP_FOREGROUND))
+    
+        if (settings!!.amoled) {
+            remoteTextView.stopTextMove()
+        }
         
         highBrightness()
         super.finish()
